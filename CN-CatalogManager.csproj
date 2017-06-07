@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <ProjectGuid>{F9657CA6-D1C7-4858-A130-C6A834CB25B3}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <OutputPath>bin</OutputPath>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <TypeScriptToolsVersion>1.8</TypeScriptToolsVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app\app.module.js" />
+    <Content Include="app\assets\images\angularconnect-shield.png" />
+    <Content Include="app\assets\images\basic-shield.png" />
+    <Content Include="app\assets\images\ng-conf.png" />
+    <Content Include="app\assets\images\ng-nl.png" />
+    <Content Include="app\assets\images\ng-vegas.png" />
+    <Content Include="app\Classes\BaseClass.js" />
+    <Content Include="app\main.js" />
+    <Content Include="app\nav\navbar.component.html" />
+    <Content Include="app\nav\navbar.component.js" />
+    <Content Include="app\products-app.component.js" />
+    <Content Include="app\products\product-detail.component.html" />
+    <Content Include="app\products\product-detail.component.js" />
+    <Content Include="app\products\products-list.component.html" />
+    <Content Include="app\products\products-list.component.js" />
+    <Content Include="app\ViewModels\Abstract\ICategoryViewModel.js" />
+    <Content Include="favicon.ico" />
+    <Content Include="index.html" />
+    <Content Include="styles.css" />
+    <Content Include="systemjs.config.js" />
+    <Content Include="web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app\app.module.js.map" />
+    <Content Include="app\Classes\BaseClass.js.map" />
+    <Content Include="app\main.js.map" />
+    <Content Include="app\nav\navbar.component.js.map" />
+    <Content Include="app\products-app.component.js.exclude" />
+    <Content Include="app\products-app.component.js.map" />
+    <Content Include="app\products-app.component.js.map.2.exclude" />
+    <Content Include="app\products-app.component.js.map.exclude" />
+    <Content Include="app\products\product-detail.component.js.map" />
+    <Content Include="app\products\products-list.component.js.map" />
+    <Content Include="app\ViewModels\Abstract\ICategoryViewModel.js.map" />
+    <Content Include="package.json" />
+    <Content Include="readme.MD" />
+    <Content Include="tsconfig.json" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="app\app.module.ts" />
+    <TypeScriptCompile Include="app\Classes\BaseClass.ts" />
+    <TypeScriptCompile Include="app\main.ts" />
+    <TypeScriptCompile Include="app\nav\navbar.component.ts" />
+    <TypeScriptCompile Include="app\products-app.component.ts" />
+    <TypeScriptCompile Include="app\products\product-detail.component.ts" />
+    <TypeScriptCompile Include="app\products\products-list.component.ts" />
+    <TypeScriptCompile Include="app\ViewModels\Abstract\ICategoryViewModel.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app\Services\" />
+    <Folder Include="app\ViewModels\Concrete\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>CN_CatalogManager</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets')" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>64334</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:64334/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptRemoveComments>false</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+</Project>
